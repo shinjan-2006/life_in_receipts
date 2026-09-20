@@ -1,0 +1,24 @@
+{
+  "name": "life-in-receipts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "SINGLE=1 vite build --outDir dist-single",
+    "preview": "vite preview",
+    "data": "python3 scripts/build_data.py ./raw ./src/data"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.1.0",
+    "@fontsource/ibm-plex-mono": "^5.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.0.3"
+  }
+}
